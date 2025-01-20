@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+from decouple import config
 
 import pymysql
 pymysql.install_as_MySQLdb()
@@ -79,23 +80,18 @@ WSGI_APPLICATION = 'gamescatalog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+SECRET_KEY = config('SECRET_KEY')
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'gamelib_database',  # Назва бази даних
-        'USER': 'gameAdmin',       # Користувач бази даних
-        'PASSWORD': '',   # Пароль користувача
-        'HOST': 'localhost',           # Хост (локальний сервер)
-        'PORT': '3306',                # Порт MySQL (типовий - 3306)
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST'),
+        'PORT': '3306',
         'OPTIONS': {
-            'sql_mode': 'traditional', # Увімкнути строгий режим для MySQL
+            'sql_mode': 'traditional',
         },
     }
 }
