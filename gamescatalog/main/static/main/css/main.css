@@ -1,0 +1,291 @@
+body {
+    background: #2c2c2c;
+    display: flex;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/*Хедер*/
+.header {
+    background: #181818;
+	height: 60px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid #4d4d4d;
+}
+
+form.filter {
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    display: flex;
+    /*gap: 10px;*/
+    align-items: center;
+}
+
+form.filter p {
+    padding: 0;
+    margin: 0;
+}
+
+form.filter .form-control {
+    height: 55px;
+    border-radius: 0;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-color: #4d4d4d;
+    background: #181818;
+    color: #fff;
+    box-shadow: none;
+}
+
+form.filter input::placeholder {
+    color: white;
+}
+
+option {
+    background-color: #181818;
+}
+
+ul.mainmenu {
+	list-style: none;
+    display: flex;
+    align-items: center;
+	margin: 0 20px 0 0;
+	padding: 0;
+	color: #fff;
+	font-size: 20px;
+	overflow: hidden;
+}
+ul.mainmenu li {
+    align-items: center;
+}
+
+ul.mainmenu a:hover {
+    color: #eb5959;
+}
+
+/*ul.mainmenu li.last {float: right;}*/
+/*Хедер*/
+
+/*Сайдбар*/
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    min-height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 32px;
+    margin-left: 5px;
+    font-weight: bold;
+    position: relative;
+    top: +15px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: white;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+aside ul a {text-decoration: none;}
+
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    transform: scale(1.05);
+}
+/*Сайдбар - кінець*/
+
+main {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-rows: 60px 1fr;
+    flex: 1;
+}
+
+.game-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    color: white;
+    text-align: left;
+}
+
+.game-container {
+    color: white;
+    text-align: left;
+}
+
+.game-container .features p {
+    margin: 5px;
+    text-align: left;
+}
+
+main .features {
+    display: grid;
+    color: white;
+    text-align: center;
+    align-content: start;
+}
+main .features img {
+    height: 300px;
+    margin:auto;
+}
+
+main .features h1 {font-size: 50px;}
+main .features h3 {max-width: 900px; margin: 20px auto}
+main .features h4 {margin-bottom: 0}
+main .features p {max-width: 900px; margin: 20px auto}
+
+.trailer {
+    width: 560px;
+    height: 315px;
+    margin: auto;
+}
+
+.register form {
+    margin-bottom: 0;
+}
+
+.register a {
+    color: #198754;
+}
+
+.register a:hover {
+    color: #eb5959;
+}
+
+main ul{
+    padding: 0;
+    list-style: none;
+}
+.detail_buttons li{
+    color: #FFC107;
+}
+
+/*Розташування ігор*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 245px));
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 20px 20px 10px 20px;
+}
+
+.alert-warning {
+    background: #4d4d4d;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    grid-template-columns: 1fr;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert-warning .img-container {
+    display: grid;
+    justify-content: center;
+    height: 240px;
+    width: 245px;
+    overflow: hidden;
+}
+
+.img-container img{
+    max-height: 240px;
+}
+
+.alert-warning:hover img {
+    transition: transform .3s ease;
+    transform: scale(1.05);
+}
+
+.alert-warning a {
+    border-radius: 0;
+}
+
+.alert-warning p {
+    color: #555;
+}
+
+form {
+    width: 500px;
+    margin: 20px auto
+}
+
+.form-error ul {
+    list-style: none;
+    padding: 0;
+    color: #CC0000;
+}
+
+.form-select option {
+    background: white;
+}
+
+/*Пагінація*/
+
+.list-pages {
+	text-align: center;
+}
+.list-pages ul {
+    margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list-pages ul li {
+	display: inline-block;
+}
+.list-pages a {
+	color: #d0d0d0;
+	font-size: 24px;
+	text-decoration: none;
+}
+.list-pages .page-num, .page-num-selected {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	padding: 10px 0 0 0;
+	border: 1px solid #d0d0d0;
+	border-radius: 30px;
+}
+.list-pages .page-num:hover {
+	box-shadow: 3px 3px 1px #d0d0d0;
+}
+.list-pages .page-num-selected {
+	border: none;
+	color: #d0d0d0;
+	font-size: 20px;
+}
+.list-pages .page-num-selected:hover {
+	box-shadow: none;
+}

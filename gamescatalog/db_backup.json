@@ -1,0 +1,1300 @@
+[
+{
+    "model": "games.categories",
+    "pk": 1,
+    "fields": {
+        "name": "Шутер",
+        "slug": "shuter"
+    }
+},
+{
+    "model": "games.categories",
+    "pk": 2,
+    "fields": {
+        "name": "Стратегія",
+        "slug": "strategiya"
+    }
+},
+{
+    "model": "games.categories",
+    "pk": 3,
+    "fields": {
+        "name": "Перегони",
+        "slug": "peregoni"
+    }
+},
+{
+    "model": "games.categories",
+    "pk": 4,
+    "fields": {
+        "name": "Метроїдванія",
+        "slug": "metroyidvaniya"
+    }
+},
+{
+    "model": "games.categories",
+    "pk": 7,
+    "fields": {
+        "name": "бам",
+        "slug": "bam"
+    }
+},
+{
+    "model": "games.platforms",
+    "pk": 1,
+    "fields": {
+        "name": "Mac",
+        "slug": "mac"
+    }
+},
+{
+    "model": "games.platforms",
+    "pk": 2,
+    "fields": {
+        "name": "Windows",
+        "slug": "windows"
+    }
+},
+{
+    "model": "games.platforms",
+    "pk": 3,
+    "fields": {
+        "name": "Linux",
+        "slug": "linux"
+    }
+},
+{
+    "model": "games.platforms",
+    "pk": 4,
+    "fields": {
+        "name": "PlayStation",
+        "slug": "playstation"
+    }
+},
+{
+    "model": "games.games",
+    "pk": 2,
+    "fields": {
+        "title": "Borderlandskjsafhjlav",
+        "slug": "borderlands",
+        "developer": "2k games",
+        "date": "2024-12-05",
+        "description": "bordelland",
+        "image": "game_images/game-foto.jpeg",
+        "trailer_url": "https://www.youtube.com/watch?v=l7xfabgnQzY&t=2300s",
+        "cat": 1,
+        "platforms": [
+            2,
+            3
+        ]
+    }
+},
+{
+    "model": "games.games",
+    "pk": 3,
+    "fields": {
+        "title": "Hollow Knight",
+        "slug": "hollow-knight",
+        "developer": "idn",
+        "date": "2024-08-06",
+        "description": "Hollow",
+        "image": "game_images/spotlight_image_english_3pMVuFJ.jpg",
+        "trailer_url": "https://www.youtube.com/watch?v=reURUKqkyYw&list=PLA0M1Bcd0w8xO_39zZll2u1lz_Q-Mwn1F&index=25",
+        "cat": 4,
+        "platforms": [
+            2
+        ]
+    }
+},
+{
+    "model": "games.games",
+    "pk": 10,
+    "fields": {
+        "title": "xcom 2",
+        "slug": "xcom-2",
+        "developer": "dnfm",
+        "date": "2013-11-12",
+        "description": "dsv",
+        "image": "game_images/spotlight_image_english_f6tKnGg.jpg",
+        "trailer_url": "https://www.youtube.com/watch?v=UNyhyzjYCks&pp=ygUMeGNvbSB0cmFpbGVy",
+        "cat": 2,
+        "platforms": [
+            4
+        ]
+    }
+},
+{
+    "model": "games.games",
+    "pk": 11,
+    "fields": {
+        "title": "Borderlands 2",
+        "slug": "borderlands-2",
+        "developer": "2k games",
+        "date": "1999-02-28",
+        "description": "jkansfjwa",
+        "image": "game_images/spotlight_image_english_PV63uQi.jpg",
+        "trailer_url": "https://www.youtube.com/watch?v=UNyhyzjYCks&pp=ygUMeGNvbSB0cmFpbGVy",
+        "cat": 1,
+        "platforms": [
+            3
+        ]
+    }
+},
+{
+    "model": "games.games",
+    "pk": 12,
+    "fields": {
+        "title": "Disciples 3",
+        "slug": "disciples-3",
+        "developer": "sdgsd",
+        "date": "2019-03-28",
+        "description": "asjvnjkaw",
+        "image": "game_images/spotlight_image_english_JaQnUkL.jpg",
+        "trailer_url": "https://www.youtube.com/watch?v=UNyhyzjYCks&pp=ygUMeGNvbSB0cmFpbGVy",
+        "cat": 2,
+        "platforms": [
+            2
+        ]
+    }
+},
+{
+    "model": "games.games",
+    "pk": 13,
+    "fields": {
+        "title": "genshin",
+        "slug": "genshin",
+        "developer": "hoyoverse",
+        "date": "2025-01-15",
+        "description": "asvnj",
+        "image": "game_images/spotlight_image_english_rf2kynx.jpg",
+        "trailer_url": "https://www.youtube.com/embed/UNyhyzjYCks?si=tAmMLZW-Zxw5Helg",
+        "cat": 4,
+        "platforms": [
+            2
+        ]
+    }
+},
+{
+    "model": "games.games",
+    "pk": 14,
+    "fields": {
+        "title": "xcom",
+        "slug": "xcom",
+        "developer": "2k games",
+        "date": "2025-01-15",
+        "description": "sadf",
+        "image": "game_images/spotlight_image_english_yLYvUKC.jpg",
+        "trailer_url": "https://www.youtube.com/embed/UNyhyzjYCks?si=tAmMLZW-Zxw5Helg",
+        "cat": 2,
+        "platforms": [
+            2
+        ]
+    }
+},
+{
+    "model": "games.games",
+    "pk": 15,
+    "fields": {
+        "title": "xcomm",
+        "slug": "xcomm",
+        "developer": "2k games",
+        "date": "2013-11-12",
+        "description": "asndf",
+        "image": "game_images/spotlight_image_english_dODaFP3.jpg",
+        "trailer_url": "https://www.youtube.com/embed/UNyhyzjYCks?si=tAmMLZW-Zxw5Helg",
+        "cat": 2,
+        "platforms": [
+            2
+        ]
+    }
+},
+{
+    "model": "games.games",
+    "pk": 16,
+    "fields": {
+        "title": "тестбам",
+        "slug": "testbam",
+        "developer": "рли",
+        "date": "2025-01-19",
+        "description": "ори",
+        "image": "game_images/spotlight_image_english_BYVJSMw.jpg",
+        "trailer_url": "https://www.youtube.com/watch?v=reURUKqkyYw&list=PLA0M1Bcd0w8xO_39zZll2u1lz_Q-Mwn1F&index=25",
+        "cat": 7,
+        "platforms": [
+            2
+        ]
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "games",
+        "model": "categories"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "games",
+        "model": "platforms"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "games",
+        "model": "games"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "games",
+        "model": "favorite"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cohidnncmxjs7my5uepxbhenwmvv497c",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSHMml_K9D4DYlkITiKQjF1FuXtsyUXSvpl5b-bDtha_9bT4mdiVDezyu2GIz1QPQI9Q743HVtdlRn4o_KSdT43S63a6fwcl9LLXmVKEASGjRY2GpFEkHUA0MicLCrUdQeVAxqATY9gVIZPWTuioBRr2-QL-FjgN:1tXyof:FbX8TAp4vwjtOU7g6p_UXcyjpVVv7ihslRoJqEwswuo",
+        "expire_date": "2025-01-29T08:31:57.266Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "fyuvg1ycrebdtwrgjrt829jocsm99tps",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSHMml_K9D4DYlkITiKQjF1FuXtsyUXSvpl5b-bDtha_9bT4mdiVDezyu2GIz1QPQI9Q743HVtdlRn4o_KSdT43S63a6fwcl9LLXmVKEASGjRY2GpFEkHUA0MicLCrUdQeVAxqATY9gVIZPWTuioBRr2-QL-FjgN:1tXgZI:rL3UjkGmBVQALP7h_7uRYj2-LZ0y2oSeGFgq8OqgS-4",
+        "expire_date": "2025-01-28T13:02:52.794Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "gn49h0uhr25q9gkq0yn3wphltfp6wuzw",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSHMml_K9D4DYlkITiKQjF1FuXtsyUXSvpl5b-bDtha_9bT4mdiVDezyu2GIz1QPQI9Q743HVtdlRn4o_KSdT43S63a6fwcl9LLXmVKEASGjRY2GpFEkHUA0MicLCrUdQeVAxqATY9gVIZPWTuioBRr2-QL-FjgN:1tXyUK:uc0rwT4WKtMyDd2EahGTkB6q9vVU_y5JH52ktnwthbs",
+        "expire_date": "2025-01-29T08:10:56.972Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "wlmvi76t54tpujmayho2iy3javpf71d5",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSHMml_K9D4DYlkITiKQjF1FuXtsyUXSvpl5b-bDtha_9bT4mdiVDezyu2GIz1QPQI9Q743HVtdlRn4o_KSdT43S63a6fwcl9LLXmVKEASGjRY2GpFEkHUA0MicLCrUdQeVAxqATY9gVIZPWTuioBRr2-QL-FjgN:1tZVtO:0tY_yhlSEdimqzqf02zDY3vg4_toAdIpSwE4qtPlHXY",
+        "expire_date": "2025-02-02T14:03:10.870Z"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Категорія",
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "codename": "add_categories"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Категорія",
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "codename": "change_categories"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Категорія",
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "codename": "delete_categories"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Категорія",
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "codename": "view_categories"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Платформа",
+        "content_type": [
+            "games",
+            "platforms"
+        ],
+        "codename": "add_platforms"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Платформа",
+        "content_type": [
+            "games",
+            "platforms"
+        ],
+        "codename": "change_platforms"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Платформа",
+        "content_type": [
+            "games",
+            "platforms"
+        ],
+        "codename": "delete_platforms"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Платформа",
+        "content_type": [
+            "games",
+            "platforms"
+        ],
+        "codename": "view_platforms"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Гра",
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "codename": "add_games"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Гра",
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "codename": "change_games"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Гра",
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "codename": "delete_games"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Гра",
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "codename": "view_games"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add Вподобання",
+        "content_type": [
+            "games",
+            "favorite"
+        ],
+        "codename": "add_favorite"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change Вподобання",
+        "content_type": [
+            "games",
+            "favorite"
+        ],
+        "codename": "change_favorite"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete Вподобання",
+        "content_type": [
+            "games",
+            "favorite"
+        ],
+        "codename": "delete_favorite"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view Вподобання",
+        "content_type": [
+            "games",
+            "favorite"
+        ],
+        "codename": "view_favorite"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": [
+            "admin",
+            "logentry"
+        ],
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view permission",
+        "content_type": [
+            "auth",
+            "permission"
+        ],
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view group",
+        "content_type": [
+            "auth",
+            "group"
+        ],
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view user",
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view content type",
+        "content_type": [
+            "contenttypes",
+            "contenttype"
+        ],
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can add session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can change session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can delete session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "fields": {
+        "name": "Can view session",
+        "content_type": [
+            "sessions",
+            "session"
+        ],
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$DrHvo0QgCL6wnq3lGqxag0$uk5fvBGTEjB3lXg0DDZ7wuTWcn98WOrVuCS6Xow5dic=",
+        "last_login": "2025-01-19T14:03:10.869Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@example.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-01-13T10:19:51Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$870000$fOK6ytO823D3ckpOS7lOAU$YXMqFTmzhVwkwol2309MngQU1HHTc3tuWeYAtaoIb+Q=",
+        "last_login": "2025-01-17T15:19:17.287Z",
+        "is_superuser": false,
+        "username": "admin1",
+        "first_name": "Іван",
+        "last_name": "Іващенко",
+        "email": "adm1@ec.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-01-17T14:40:49.444Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2025-01-13T10:20:21.069Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "1",
+        "object_repr": "Шутер",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2025-01-13T10:20:32.580Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "2",
+        "object_repr": "Стратегія",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2025-01-13T10:20:39.046Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "3",
+        "object_repr": "Перегони",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2025-01-13T10:22:01.114Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "4",
+        "object_repr": "Метроїдванія",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2025-01-13T10:22:15.882Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "platforms"
+        ],
+        "object_id": "1",
+        "object_repr": "Mac",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2025-01-13T10:22:20.493Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "platforms"
+        ],
+        "object_id": "2",
+        "object_repr": "Windows",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2025-01-13T10:22:24.078Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "platforms"
+        ],
+        "object_id": "3",
+        "object_repr": "Linux",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2025-01-13T10:22:30.379Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "platforms"
+        ],
+        "object_id": "4",
+        "object_repr": "PlayStation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2025-01-13T10:23:10.773Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "1",
+        "object_repr": "XCOM",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2025-01-13T10:23:41.885Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "2",
+        "object_repr": "Borderlands",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2025-01-13T10:24:23.380Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "3",
+        "object_repr": "Hollow Knight",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2025-01-13T14:37:28.289Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "4",
+        "object_repr": "xcom",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"URL\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2025-01-13T15:43:49.250Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "7",
+        "object_repr": "xcom",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2025-01-13T22:41:49.751Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "10",
+        "object_repr": "xcom 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Platforms\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2025-01-13T22:41:54.249Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "11",
+        "object_repr": "Borderlands 2",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Platforms\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2025-01-13T22:42:05.684Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "1",
+        "object_repr": "XCOM",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2025-01-13T22:42:08.649Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "1",
+        "object_repr": "XCOM",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2025-01-13T22:42:34.067Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "12",
+        "object_repr": "Disciples 3",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Platforms\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2025-01-15T08:32:10.437Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "1",
+        "object_repr": "XCOM",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2025-01-15T08:37:53.442Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "1",
+        "object_repr": "XCOM",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Trailer url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2025-01-15T17:15:10.863Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2025-01-19T14:14:24.540Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "5",
+        "object_repr": "Жанр",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2025-01-19T14:14:32.943Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "5",
+        "object_repr": "Жанр",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2025-01-19T14:15:54.671Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "6",
+        "object_repr": "іам",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2025-01-19T14:16:02.561Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "6",
+        "object_repr": "іам",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2025-01-19T14:18:48.560Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "categories"
+        ],
+        "object_id": "7",
+        "object_repr": "бам",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2025-01-19T14:19:14.468Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "games",
+            "games"
+        ],
+        "object_id": "16",
+        "object_repr": "тестбам",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "games.favorite",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "admin"
+        ],
+        "game": 3
+    }
+}
+]

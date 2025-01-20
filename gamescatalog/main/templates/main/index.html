@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <h3>Цей сайт було створено для зручного та приємного пошуку відеоігор, в які ви б могли зіграти у вільний час. Нижче наведені кулька посилань, аби ви могли одразу перейти до пункту, що вас цікавить. Також рекомендую увійти в свій акаунт або зареєструвати новий, аби отримати доступ до повного спектру можливостей сайту. Дякую і приємного користування.</h3>
+        <div class="buttons">
+            <a href="{% url 'about' %}"><button class="btn btn-warning">На сторінку з інформацією про автора</button></a>
+            <a href="{% url 'contact' %}"><button class="btn btn-warning">На сторінку з контактами</button></a>
+            <a href="{% url 'games_home' %}"><button class="btn btn-warning">На сторінку з каталогом доступних ігор</button></a>
+        </div>
+    </div>
+{% endblock %}

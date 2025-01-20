@@ -1,0 +1,49 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Каталог ігор{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <div class="grid-container">
+            {% if games %}
+                {% for el in games %}
+                    <div class="alert alert-warning">
+                        <a href="{{ el.get_absolute_url }}" class="img-container">
+                            <img src="{{ el.image.url }}" alt="{{ el.title }}">
+                        </a>
+                        <a href="{{ el.get_absolute_url }}" class="btn btn-warning">{{ el.title }}</a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>Наразі в каталозі відсутні ігри!</p>
+            {% endif %}
+        </div>
+
+    {% if page_obj.has_other_pages %}
+        <nav class="list-pages">
+            <ul>
+                {% if page_obj.has_previous %}
+                    <a class="page-num" href="?page={{ page_obj.previous_page_number }}">
+                        <li><i class="fas fa-arrow-left"></i></li>
+                    </a>
+                {% endif %}
+                {% for p in paginator.page_range %}
+                    {% if page_obj.number == p %}
+                    <li class="page-num page-num-selected">{{ p }}</li>
+                    {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2%}
+                    <a class="page-num" href="?page={{ p }}">
+                        <li>{{ p }}</li>
+                    </a>
+                    {% endif %}
+                {% endfor %}
+                {% if page_obj.has_next %}
+                    <a class="page-num" href="?page={{ page_obj.next_page_number }}">
+                        <li><i class="fas fa-arrow-right"></i></li>
+                    </a>
+                {% endif %}
+            </ul>
+        </nav>
+    {% endif %}
+    {# Коментарій #}
+    </div>
+{% endblock %}

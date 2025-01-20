@@ -1,0 +1,59 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ game.title }}{% endblock %}
+
+{% block content %}
+    <div class="game-container">
+        <h1>{{ game.title }}</h1>
+        <div class="game-details">
+            <div class="features ">
+                {% if game.trailer_url %}
+                    <iframe class="trailer"
+                            src="{{ game.trailer_url }}"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                {% else %}
+                    <p>Трейлер недоступний.</p>
+                {% endif %}
+                <p>Розробник: {{ game.developer }}</p>
+                <p>Категорія: {{ game.cat }}</p>
+                <p>Платформи:
+                    {% for platform in game.platforms.all %}
+                        {{ platform.name }}{% if not forloop.last %}, {% endif %}
+                    {% endfor %}</p>
+                <p>Дата релізу: {{ game.date }}</p>
+                <div class="detail_buttons">
+                    {% if authenticated and user.is_superuser %}
+                        <a href="{% url 'games_delete' game.slug %}" class="btn btn-danger">Видалити</a>
+                        <a href="{% url 'games_update' game.slug %}" class="btn btn-info">Редагувати</a>
+                    {% endif %}
+                    {% if authenticated %}
+                        {% if game.id in favorites %}
+                            <form method="post" action="{% url 'delete_favorite' game.slug %}">
+                                {% csrf_token %}
+                                <button class="btn btn-danger" type="submit">Видалити з вподобань</button>
+                            </form>
+                        {% else %}
+                            <form method="post" action="{% url 'add_favorite' game.slug %}">
+                                {% csrf_token %}
+                                <button class="btn btn-success" type="submit">Додати до вподобань</button>
+                            </form>
+                        {% endif %}
+                    {% else %}
+                        <a href="{% url 'login' %}" class="btn btn-success">Додати до вподобань</a>
+                    {% endif %}
+                    {% if messages %}
+                        <ul>
+                            {% for message in messages %}
+                                <li>{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
+            <p>{{ game.description }}</p>
+        </div>
+    </div>
+{% endblock %}

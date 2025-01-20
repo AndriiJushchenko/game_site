@@ -1,0 +1,19 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Профіль{% endblock %}
+
+{% block content %}
+    <div class="features register">
+        <h1>Профіль користувача</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-error">{{ form.non_field_errors }}</div>
+            {% for f in form %}
+                <p style="text-align: left"><label for="{{ f.id_for_label }}" class="form-control-label">{{ f.label }}:</label>{{ f }}</p>
+                <div class="form-error">{{ f.errors }}</div>
+            {% endfor %}
+            <button class="btn btn-success" type="submit">Зберегти</button>
+        </form>
+        <p><a href="{% url 'password_change' %}">Змінити пароль</a></p>
+    </div>
+{% endblock %}

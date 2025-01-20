@@ -1,0 +1,18 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ form_title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ form_title }}</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-error">{{ form.non_field_errors }}</div>
+            {% for f in form %}
+                <p>{{ f }}</p>
+                <div class="form-error">{{ f.errors }}</div>
+            {% endfor %}
+            <button class="btn btn-success" type="submit">Зберегти</button>
+        </form>
+    </div>
+{% endblock %}
